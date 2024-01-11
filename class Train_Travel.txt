@@ -1,0 +1,317 @@
+class Train_Travel:
+    all_Trains = [
+        {
+            "Train": "Rajdhani Express",
+            "Train Number": "22691",
+            "Route": "Bengaluru to Mumbai",
+            "Class": "AC 3 tier",
+            "Depart": "6am",
+            "Duration": "10h 10m",
+            "Arrival": "6pm:10m",
+            "Price": "3000"
+        },
+        {
+            "Train": "Rajdhani Express",
+            "Train Number": "22691",
+            "Route": "Bengaluru to Mumbai",
+            "Class": "AC 2 tier",
+            "Depart": "6am",
+            "Duration": "10h 10m",
+            "Arrival": "6pm:10m",
+            "Price": "2000"
+        },
+        {
+            "Train": "Rajdhani Express",
+            "Train Number": "22691",
+            "Route": "Bengaluru to Mumbai",
+            "Class": "AC First Class",
+            "Depart": "6am",
+            "Duration": "10h 10m",
+            "Arrival": "6pm:10m",
+            "Price": "895"
+        },
+        {
+            "Train": "Vande Bharat Express",
+            "Train Number": "22436/ 22435",
+            "Route": "New Delhi – Varanasi Vande Bharat Express",
+            "Class": "AC with room",
+            "Depart": "12am",
+            "Duration": "24hr",
+            "Arrival": "12pm",
+            "Price": "10000"
+        },
+        {
+            "Train": "Gatimaan Express",
+            "Train Number": "12050",
+            "Route": "Bengaluru to Mumbai",
+            "Class": "Sleeper class",
+            "Depart": "12am",
+            "Duration": "24hr",
+            "Arrival": "12pm",
+            "Price": "800"
+        },
+        {
+            "Train": "Shatabdi Express",
+            "Train Number": "12028 ",
+            "Route": "Bengaluru to Mumbai",
+            "Class": "AC 3 tier",
+            "Depart": "5am",
+            "Duration": "11hr",
+            "Arrival": "6pm",
+            "Price": "3000"
+        },
+        {
+            "Train": "Shatabdi Express",
+            "Train Number": "12028 ",
+            "Route": "Bengaluru to Mumbai",
+            "Class": "AC 2 tier",
+            "Depart": "5am",
+            "Duration": "11hr",
+            "Arrival": "6pm",
+            "Price": "2000"
+        },
+        {
+            "Train": "Shatabdi Express",
+            "Train Number": "12028 ",
+            "Route": "Bengaluru to Mumbai",
+            "Class": "AC first class",
+            "Depart": "5am",
+            "Duration": "11hr",
+            "Arrival": "6pm",
+            "Price": "1000"
+        }
+        
+    ]
+    
+    orders = [
+        {
+            "Train": "Rajdhani Express",
+            "Train Number": "22691",
+            "Route": "Bengaluru to Mumbai",
+            "Class": "AC 3 tier",
+            "Depart": "6am",
+            "Duration": "10h 10m",
+            "Arrival": "6pm:10m",
+            "Price": "3000",
+            "Passengername": "rahul"
+        },
+        {
+            "Train": "Rajdhani Express",
+            "Train Number": "22691",
+            "Route": "Bengaluru to Mumbai",
+            "Class": "AC 2 tier",
+            "Depart": "6am",
+            "Duration": "10h 10m",
+            "Arrival": "6pm:10m",
+            "Price": "2000",
+            "Passengername": "prashanth"
+        },
+        {
+            "Train": "Rajdhani Express",
+            "Train Number": "22691",
+            "Route": "Bengaluru to Mumbai",
+            "Class": "AC First Class",
+            "Depart": "6am",
+            "Duration": "10h 10m",
+            "Arrival": "6pm:10m",
+            "Price": "895",
+            "Passengername": "rohit"
+        },
+        {
+            "Train": "Vande Bharat Express",
+            "Train Number": "22436/ 22435",
+            "Route": "New Delhi – Varanasi Vande Bharat Express",
+            "Class": "AC with room",
+            "Depart": "12am",
+            "Duration": "24hr",
+            "Arrival": "12pm",
+            "Price": "10000",
+            "Passengername": "rinil"
+        },
+        {
+            "Train": "Gatimaan Express",
+            "Train Number": "12050",
+            "Route": "Bengaluru to Mumbai",
+            "Class": "Sleeper class",
+            "Depart": "12am",
+            "Duration": "24hr",
+            "Arrival": "12pm",
+            "Price": "800",
+            "Passengername": "vamsi"
+        },
+        {
+            "Train": "Shatabdi Express",
+            "Train Number": "12028 ",
+            "Route": "Bengaluru to Mumbai",
+            "Class": "AC 3 tier",
+            "Depart": "5am",
+            "Duration": "11hr",
+            "Arrival": "6pm",
+            "Price": "3000",
+            "Passengername": "vinay"
+        },
+        {
+            "Train": "Shatabdi Express",
+            "Train Number": "12028 ",
+            "Route": "Bengaluru to Mumbai",
+            "Class": "AC 2 tier",
+            "Depart": "5am",
+            "Duration": "11hr",
+            "Arrival": "6pm",
+            "Price": "2000",
+            "Passengername": "mahe"
+        },
+        {
+            "Train": "Shatabdi Express",
+            "Train Number": "12028 ",
+            "Route": "Bengaluru to Mumbai",
+            "Class": "AC first class",
+            "Depart": "5am",
+            "Duration": "11hr",
+            "Arrival": "6pm",
+            "Price": "1000",
+            "Passengername": "harish"
+        }
+    ]
+    
+    purchase_details = [
+        {
+            "Train": "Rajdhani Express",
+            "Train Number": "22691",
+            "Route": "Bengaluru to Mumbai",
+            "Class": "AC 3 tier",
+            "Depart": "6am",
+            "Duration": "10h 10m",
+            "Arrival": "6pm:10m",
+            "Price": "3000",
+            "Passengername": "rahul",
+            "payment mode": "credit card"
+        },
+        {
+            "Train": "Rajdhani Express",
+            "Train Number": "22691",
+            "Route": "Bengaluru to Mumbai",
+            "Class": "AC 2 tier",
+            "Depart": "6am",
+            "Duration": "10h 10m",
+            "Arrival": "6pm:10m",
+            "Price": "2000",
+            "Passengername": "prashanth",
+            "payment mode": "debit card"
+        },
+        {
+            "Train": "Rajdhani Express",
+            "Train Number": "22691",
+            "Route": "Bengaluru to Mumbai",
+            "Class": "AC First Class",
+            "Depart": "6am",
+            "Duration": "10h 10m",
+            "Arrival": "6pm:10m",
+            "Price": "895",
+            "Passengername": "rohit",
+            "payment mode": "cash"
+        },
+        {
+            "Train": "Vande Bharat Express",
+            "Train Number": "22436/ 22435",
+            "Route": "New Delhi – Varanasi Vande Bharat Express",
+            "Class": "AC with room",
+            "Depart": "12am",
+            "Duration": "24hr",
+            "Arrival": "12pm",
+            "Price": "10000",
+            "Passengername": "rinil",
+            "payment mode": "cash"
+        },
+        {
+            "Train": "Gatimaan Express",
+            "Train Number": "12050",
+            "Route": "Bengaluru to Mumbai",
+            "Class": "Sleeper class",
+            "Depart": "12am",
+            "Duration": "24hr",
+            "Arrival": "12pm",
+            "Price": "800",
+            "Passengername": "vamsi",
+            "payment mode": "UPI"
+        },
+        {
+            "Train": "Shatabdi Express",
+            "Train Number": "12028 ",
+            "Route": "Bengaluru to Mumbai",
+            "Class": "AC 3 tier",
+            "Depart": "5am",
+            "Duration": "11hr",
+            "Arrival": "6pm",
+            "Price": "3000",
+            "Passengername": "vinay",
+            "payment mode": "cash"
+        },
+        {
+            "Train": "Shatabdi Express",
+            "Train Number": "12028 ",
+            "Route": "Bengaluru to Mumbai",
+            "Class": "AC 2 tier",
+            "Depart": "5am",
+            "Duration": "11hr",
+            "Arrival": "6pm",
+            "Price": "2000",
+            "Passengername": "mahe",
+            "payment mode": "debit card"
+        },
+        {
+            "Train": "Shatabdi Express",
+            "Train Number": "12028 ",
+            "Route": "Bengaluru to Mumbai",
+            "Class": "AC first class",
+            "Depart": "5am",
+            "Duration": "11hr",
+            "Arrival": "6pm",
+            "Price": "1000",
+            "Passengername": "harish",
+            "payment mode": "debit card"
+        }
+    ]
+
+    def search_allTrains(self, trains):
+        self.all_Trains = trains
+
+    def display_allTrains(self):
+        print("\nTrains Information:")
+        for i in self.all_Trains:
+            for key, value in i.items():
+                print(f"{key}: {value}")
+            print()
+
+    def order_Train(self, check):
+        self.orders = check
+
+    def display_order(self, passenger_name):
+        for i in self.orders:
+            if i["Passengername"] == passenger_name:
+                print("\nOrder Information:")
+                for key, value in i.items():
+                    print(f"{key}: {value}")
+                print()
+
+    def Purchase(self, mode):
+        self.purchase_details = mode
+
+    def display_details(self, passenger_mode):
+        for i in self.purchase_details:
+            if i["Passengername"] == passenger_mode:
+                print("\nPurchase details:")
+                for key, value in i.items():
+                    print(f"{key}: {value}")
+                print()
+
+
+rahul = Train_Travel()
+rahul.search_allTrains(rahul.all_Trains)
+rahul.display_allTrains()
+
+rahul.order_Train(rahul.orders)
+rahul.display_order("rahul")
+
+rahul.Purchase(rahul.purchase_details)
+rahul.display_details("rahul")
